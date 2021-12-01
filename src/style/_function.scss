@@ -1,0 +1,4 @@
+@function calResponsiveValues($target-width, $max-width) {
+
+    @return percentage($target-width / $max-width);
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <title>Overview</title>
+</head>
+
+<body>
+    <div class="row m-0 ">
+        <div class="col-3 sidebar">
+
+            <!-- Sidebar -->
+            <!-- Heading -->
+            <div class="heading d-flex align-items-center flex-wrap">
+                <img src="src/images/logo.svg" alt="logo">
+                <h2>Dashboard Kit</h2>
+            </div>
+
+            <!-- Sidebar list -->
+            <div class="lists">
+
+                <a href="#" class="active d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/overview.svg" alt="">
+                    </div>
+                    <p class="text">
+                        Overview
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/tickets.svg" alt="">
+                    </div>
+                    <p class="text">
+                        tickets
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/ideas.svg" alt="">
+                    </div>
+                    <p class="text">
+                        ideas
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/contacts.svg" alt="">
+                    </div>
+                    <p class="text">
+                        contacts
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/agents.svg" alt="">
+                    </div>
+                    <p class="text">
+                        agents
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/articles.svg" alt="">
+                    </div>
+                    <p class="text">
+                        articles
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="divider"></div>
+            <div class="lists">
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/settings.svg" alt="">
+                    </div>
+                    <p class="text">
+                        settings
+                    </p>
+                </a>
+
+                <a href="#" class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="src/images/subscription.svg" alt="">
+                    </div>
+                    <p class="text">
+                        subscription
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="heading d-flex align-items-center">
+                <h2>Overview</h2>
+                <div class="icons d-flex justify-content-between">
+                    <img src="src/images/search.svg" alt="">
+                    <img src="src/images/alerts.svg" alt="">
+                </div>
+                <h3>Jones Ferdinand</h3>
+                <img src="src/images/avatar.png" alt="" class="avatar">
+            </div>
+
+            <div class="row cards">
+                <div class="col-3">
+                    <div class="card">
+
+                        <h3>Unresolved</h3>
+                        <p>60</p>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+
+                        <h3>Overdue</h3>
+                        <p>16</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+
+                        <h3>Open</h3>
+                        <p>43</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+
+                        <h3>On hold</h3>
+                        <p>64</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="today_trends">
+                        <div class="row">
+                            <div class="col-7">
+                                <canvas id="myChart" width="686" height="380"></canvas>
+
+                            </div>
+                            <div class="col-5">
+                                <div class="card d-flex align-items-center justify-content-center">
+                                    <h3>Resolved</h3>
+                                    <p>449</p>
+                                </div>
+                                <div class="card d-flex align-items-center justify-content-center">
+                                    <h3>Received</h3>
+                                    <p>426</p>
+                                </div>
+                                <div class="card d-flex align-items-center justify-content-center">
+                                    <h3>Average first response time</h3>
+                                    <p>33m</p>
+                                </div>
+                                <div class="card d-flex align-items-center justify-content-center">
+                                    <h3>Average response time</h3>
+                                    <p>3h 8m</p>
+                                </div>
+                                <div class="card d-flex align-items-center justify-content-center">
+                                    <h3>Resolution within SLA</h3>
+                                    <p>94%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row ticket_tasks">
+                <div class="col-6">
+                    <div class="wrapper">
+                        <div class="heading d-flex justify-content-between align-items-center flex-wrap">
+                            <h3>Unresolved tickets</h3>
+                            <a href="#">View details</a>
+                        </div>
+                        <h4><span>Group:</span> Support</h4>
+                        <ul>
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <h3>Waiting on Feature Request</h3>
+                                <span>4238</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <h3>Awaiting Developer Fix</h3>
+                                <span>1005</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <h3>Waiting on Feature Request</h3>
+                                <span>914</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <h3>Pending</h3>
+                                <span>281</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="wrapper">
+                        <div class="heading d-flex justify-content-between align-items-center flex-wrap">
+                            <h3>Tasks</h3>
+                            <a href="#">View all</a>
+                        </div>
+                        <h4><span>Today</span></h4>
+                        <ul>
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <h3 class="text-gray">Create new task</h3>
+                                <span class="btn_gray d-flex justify-content-center align-items-center">+</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                
+                                <h3>
+                                    <input class="form-check-input" type="checkbox">
+                                    Finish ticket update
+                                </h3>
+                                <span class="btn btn_yellow">Urgent</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <input class="form-check-input" type="checkbox">
+                                <h3>Create new ticket example</h3>
+                                <span class="btn btn_green">New</span>
+                            </li>
+
+                            <li class="ticket d-flex justify-content-between align-items-center">
+                                <input class="form-check-input" type="checkbox">
+                                <h3>Update ticket report</h3>
+                                <span class="btn btn_graylightest">Default</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+    <script src="./src/js/chart.js"></script>
+
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>
