@@ -7,42 +7,54 @@ const myChart = new Chart(ctx, {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: 'Nidal',
-            data: [22, 59, 37, 55, 50, 56],
+                label: 'Nidal',
+                data: [22, 59, 37, 55, 50, 56],
 
-            borderColor: [
-                'rgba(55, 81, 255, 1)',
-            ],
-            fill: true,
-            backgroundColor: gradientFill,
-            borderWidth: 2,
-            pointBorderColor: "rgba(55, 81, 255, 1)",
-            pointHoverBackgroundColor: "#ffffff",
-            pointHoverBorderColor: "#3751ff",
-            pointHoverRadius: 4,
-            pointHoverBorderWidth: 4,
-            radius: 0,
+                borderColor: [
+                    'rgba(55, 81, 255, 1)',
+                ],
+                fill: true,
+                backgroundColor: gradientFill,
+                borderWidth: 2,
+                pointBorderColor: "rgba(55, 81, 255, 1)",
+                pointHoverBackgroundColor: "#ffffff",
+                pointHoverBorderColor: "#3751ff",
+                pointHoverRadius: 4,
+                pointHoverBorderWidth: 4,
+                radius: 0,
 
-        },
-        {
-            label: 'Touhami',
-            data: [ 55, 22,50, 40, 37, 50],
+            },
+            {
+                label: 'Touhami',
+                data: [55, 22, 50, 40, 37, 50],
 
-            borderColor: [
-                '#DFE0EB',
-            ],
-            borderWidth: 2,
-            pointBorderColor: "rgba(55, 81, 255, 1)",
-            pointHoverBackgroundColor: "#ffffff",
-            pointHoverBorderColor: "#3751ff",
-            pointHoverRadius: 4,
-            pointHoverBorderWidth: 4,
-            radius: 0,
+                borderColor: [
+                    '#DFE0EB',
+                ],
+                borderWidth: 2,
+                pointBorderColor: "rgba(55, 81, 255, 1)",
+                pointHoverBackgroundColor: "#ffffff",
+                pointHoverBorderColor: "#3751ff",
+                pointHoverRadius: 4,
+                pointHoverBorderWidth: 4,
+                radius: 0,
 
-        }]
+            }
+        ]
     },
     options: {
-        responsive: false,
+        plugins: {
+            legend: {
+                position: 'top',
+                align:'end'
+            },
+            title: {
+                display: true,
+                text: 'as of 25 May 2019, 09:41 PM',
+            },
+        },
+        
+        responsive: true,
         interaction: {
             intersect: false
         },
@@ -57,13 +69,24 @@ const myChart = new Chart(ctx, {
             y: {
                 beginAtZero: true,
                 suggestedMin: 0,
-                suggestedMax: 60
+                suggestedMax: 60,
+                position: 'right',
+                ticks: {
+                    fontSize: 10,
+                    fontStyle: "normal",
+                    color: '#9FA2B4',
+                },
+                grid: {
+                    color: '#EBEDF0',
+                    drawBorder: false
+                },
+                title: {
+                    align: 'start'
+                }
             },
             x: {
                 display: false
             }
-
-
         }
     }
 });

@@ -172,6 +172,27 @@ body {
 .col-9 .today_trends .col-7 {
   width: 69.51872% !important; }
 
+.col-9 .today_trends .col-7 .heading {
+  padding-left: 2.85205% !important;
+  padding-top: 24px;
+  margin: 0; }
+
+.col-9 .today_trends .col-7 .heading h3 {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #252733;
+  margin: 0 !important;
+  margin-bottom: 8px !important; }
+
+.col-9 .today_trends .col-7 .heading p {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #9FA2B4; }
+
 .col-9 .today_trends .col-5 {
   padding: 0px;
   width: 30.48128% !important; }

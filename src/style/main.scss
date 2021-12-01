@@ -239,8 +239,33 @@ body {
         background-color: white;
         margin-bottom: 30px;
 
-        .col-7{
+        .col-7 {
             width: calResponsiveValues(780px, 1122px) !important;
+
+
+            .heading{
+                padding-left: calResponsiveValues(32px, 1122px) !important;
+                padding-top: 24px;
+                margin: 0;
+                h3 {
+                    font-weight: bold;
+                    font-size: 19px;
+                    line-height: 24px;
+                    letter-spacing: 0.4px;
+                    text-align: left;
+                    color: $grayscal_black;
+                    margin: 0 !important;
+                    margin-bottom: 8px !important;
+                }
+    
+                p{
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.1px;
+                    color: $grayscal_gray;
+                }
+
+            }
         }
 
         .col-5 {
