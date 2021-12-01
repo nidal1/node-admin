@@ -239,8 +239,13 @@ body {
         background-color: white;
         margin-bottom: 30px;
 
+        .col-7{
+            width: calResponsiveValues(780px, 1185px) !important;
+        }
+
         .col-5 {
             padding: 0px;
+            width: calResponsiveValues(342px, 1185px) !important;
 
             .card {
 
@@ -259,6 +264,7 @@ body {
                 padding-left: calc(var(--bs-gutter-x) * .5);
                 padding-top: 24px;
                 padding-bottom: 24px;
+                width: 100%;
 
                 h3 {
                     font-weight: 600;

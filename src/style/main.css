@@ -169,8 +169,12 @@ body {
   background-color: white;
   margin-bottom: 30px; }
 
+.col-9 .today_trends .col-7 {
+  width: 65.82278% !important; }
+
 .col-9 .today_trends .col-5 {
-  padding: 0px; }
+  padding: 0px;
+  width: 28.86076% !important; }
 
 .col-9 .today_trends .col-5 .card {
   border-radius: 0;
@@ -179,7 +183,8 @@ body {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   padding-top: 24px;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  width: 100%; }
 
 .col-9 .today_trends .col-5 .card * {
   margin: 0; }
