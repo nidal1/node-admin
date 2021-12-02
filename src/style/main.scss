@@ -1,4 +1,5 @@
 @import 'function';
+@import 'mixins';
 
 $sidebar_bg:#363740;
 $grayscale_bg:#F7F8FC;
@@ -12,6 +13,14 @@ $acent_light:#DDE2FF;
 $acent_default:#3751ff;
 $yellow_default:#FEC400;
 $green_default:#29CC97;
+
+
+$xs: 575px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -239,7 +248,7 @@ body {
         background-color: white;
         margin-bottom: 30px;
 
-        .col-7 {
+        .col-sm-7 {
             width: calResponsiveValues(780px, 1122px) !important;
 
 
@@ -268,14 +277,14 @@ body {
             }
         }
 
-        .col-5 {
+        .col-sm-3 {
             padding: 0px;
             width: calResponsiveValues(342px, 1122px) !important;
 
             .card {
 
                 * {
-                    margin: 0;
+                    margin: 0 !important;
                 }
 
                 &:last-child {
@@ -308,6 +317,7 @@ body {
                     text-align: center;
                     letter-spacing: 0.3px;
                     color: $grayscal_black;
+                    margin: 0;
                 }
 
 
@@ -476,3 +486,31 @@ body {
     }
 
 }
+
+@include media-down($xs){
+    .col-9{
+        flex: 1 !important;
+
+        .heading .icons img:first-child{
+            margin-right: 55% !important;
+        }
+
+        .avatar-wrapper {
+            flex: 1;
+        }
+
+        .today_trends {
+            .col-sm-3,
+            .col-sm-7 {
+                width: 100% !important;
+            } 
+        }
+
+        .ticket_tasks{
+            .col-xs-6:first-child{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+

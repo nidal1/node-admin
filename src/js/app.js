@@ -53,8 +53,6 @@ const myChart = new Chart(ctx, {
                 text: 'as of 25 May 2019, 09:41 PM',
             },
         },
-        
-        responsive: true,
         interaction: {
             intersect: false
         },

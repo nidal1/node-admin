@@ -169,15 +169,15 @@ body {
   background-color: white;
   margin-bottom: 30px; }
 
-.col-9 .today_trends .col-7 {
+.col-9 .today_trends .col-sm-7 {
   width: 69.51872% !important; }
 
-.col-9 .today_trends .col-7 .heading {
+.col-9 .today_trends .col-sm-7 .heading {
   padding-left: 2.85205% !important;
   padding-top: 24px;
   margin: 0; }
 
-.col-9 .today_trends .col-7 .heading h3 {
+.col-9 .today_trends .col-sm-7 .heading h3 {
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -187,17 +187,17 @@ body {
   margin: 0 !important;
   margin-bottom: 8px !important; }
 
-.col-9 .today_trends .col-7 .heading p {
+.col-9 .today_trends .col-sm-7 .heading p {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1px;
   color: #9FA2B4; }
 
-.col-9 .today_trends .col-5 {
+.col-9 .today_trends .col-sm-3 {
   padding: 0px;
   width: 30.48128% !important; }
 
-.col-9 .today_trends .col-5 .card {
+.col-9 .today_trends .col-sm-3 .card {
   border-radius: 0;
   border: 1px solid #DFE0EB !important;
   border-top: 0 !important;
@@ -207,13 +207,13 @@ body {
   padding-bottom: 24px;
   width: 100%; }
 
-.col-9 .today_trends .col-5 .card * {
-  margin: 0; }
+.col-9 .today_trends .col-sm-3 .card * {
+  margin: 0 !important; }
 
-.col-9 .today_trends .col-5 .card:last-child {
+.col-9 .today_trends .col-sm-3 .card:last-child {
   border-bottom: none !important; }
 
-.col-9 .today_trends .col-5 .card h3 {
+.col-9 .today_trends .col-sm-3 .card h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -222,13 +222,14 @@ body {
   color: #9FA2B4;
   margin-bottom: 6px !important; }
 
-.col-9 .today_trends .col-5 .card p {
+.col-9 .today_trends .col-sm-3 .card p {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.3px;
-  color: #252733; }
+  color: #252733;
+  margin: 0; }
 
 .col-9 .ticket_tasks .wrapper {
   background-color: #fff;
@@ -354,3 +355,16 @@ body {
 .col-9 .ticket_tasks .wrapper ul li span.btn.btn_graylightest {
   background-color: #F0F1F7;
   color: #9FA2B4; }
+
+@media (max-width: 575px) {
+  .col-9 {
+    flex: 1 !important; }
+  .col-9 .heading .icons img:first-child {
+    margin-right: 55% !important; }
+  .col-9 .avatar-wrapper {
+    flex: 1; }
+  .col-9 .today_trends .col-sm-3,
+  .col-9 .today_trends .col-sm-7 {
+    width: 100% !important; }
+  .col-9 .ticket_tasks .col-xs-6:first-child {
+    margin-bottom: 30px; } }
