@@ -1,7 +1,11 @@
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 14px;
-  background-color: #F7F8FC !important; }
+  background-color: #F7F8FC !important;
+  position: relative; }
+
+body * {
+  transition: all 0.5s ease-in-out !important; }
 
 .sidebar {
   background-color: #363740;
@@ -357,12 +361,35 @@ body {
   color: #9FA2B4; }
 
 @media (max-width: 575px) {
+  .col-3 {
+    width: 80% !important;
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100; }
   .col-9 {
-    flex: 1 !important; }
+    flex: 1 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important; }
+  .col-9 .heading .fas {
+    display: inline-block !important;
+    cursor: pointer; }
+  .col-9 .heading .icons {
+    width: auto !important;
+    margin-left: 10px;
+    gap: 15px;
+    order: 2; }
+  .col-9 .heading .icons img {
+    cursor: pointer; }
   .col-9 .heading .icons img:first-child {
-    margin-right: 55% !important; }
-  .col-9 .avatar-wrapper {
-    flex: 1; }
+    margin-right: 0 !important; }
+  .col-9 .heading .avatar {
+    order: 1; }
   .col-9 .today_trends .col-sm-3,
   .col-9 .today_trends .col-sm-7 {
     width: 100% !important; }

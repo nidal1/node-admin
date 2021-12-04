@@ -1,5 +1,5 @@
 @import 'function';
-@import 'mixins';
+
 
 $sidebar_bg:#363740;
 $grayscale_bg:#F7F8FC;
@@ -15,17 +15,16 @@ $yellow_default:#FEC400;
 $green_default:#29CC97;
 
 
-$xs: 575px;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
 
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
     background-color: $grayscale_bg !important;
+    position: relative;
+
+    *{
+        transition: all 0.5s ease-in-out !important;
+    }
 }
 
 .sidebar {
@@ -118,6 +117,8 @@ body {
         * {
             margin-bottom: 0;
         }
+
+
 
         h2 {
             font-weight: bold;
@@ -252,10 +253,11 @@ body {
             width: calResponsiveValues(780px, 1122px) !important;
 
 
-            .heading{
+            .heading {
                 padding-left: calResponsiveValues(32px, 1122px) !important;
                 padding-top: 24px;
                 margin: 0;
+
                 h3 {
                     font-weight: bold;
                     font-size: 19px;
@@ -266,8 +268,8 @@ body {
                     margin: 0 !important;
                     margin-bottom: 8px !important;
                 }
-    
-                p{
+
+                p {
                     font-size: 12px;
                     line-height: 16px;
                     letter-spacing: 0.1px;
@@ -485,32 +487,8 @@ body {
 
     }
 
+
 }
 
-@include media-down($xs){
-    .col-9{
-        flex: 1 !important;
-
-        .heading .icons img:first-child{
-            margin-right: 55% !important;
-        }
-
-        .avatar-wrapper {
-            flex: 1;
-        }
-
-        .today_trends {
-            .col-sm-3,
-            .col-sm-7 {
-                width: 100% !important;
-            } 
-        }
-
-        .ticket_tasks{
-            .col-xs-6:first-child{
-                margin-bottom: 30px;
-            }
-        }
-    }
-}
+@import 'responsive';
 

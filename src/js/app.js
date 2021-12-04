@@ -1,3 +1,34 @@
+
+// Sidebar
+
+document.querySelector(".menu_toggle").addEventListener("click",function () {
+    this.classList.toggle("fa-times");
+    document.querySelector(".sidebar").classList.toggle("d-none");
+     
+})
+
+document.addEventListener("scroll", function () {
+    if (!document.querySelector(".sidebar").classList.contains("d-none")) {
+        document.querySelector(".sidebar").classList.toggle("d-none");
+        document.querySelector(".menu_toggle").classList.toggle("fa-times");
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Chart js
 const ctx = document.getElementById('myChart').getContext("2d");
 var gradientFill = ctx.createLinearGradient(500, 0, 100, 0);
 gradientFill.addColorStop(1, "rgba(55, 81, 255, 0.2)");

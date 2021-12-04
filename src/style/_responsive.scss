@@ -1,0 +1,71 @@
+@import 'mixins';
+
+$xs: 575px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@include media-down($xs) {
+    .col-3 {
+        width: 80% !important;
+        height: 100vh;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    .col-9 {
+        flex: 1 !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100% !important;
+
+        .heading {
+
+            .fas {
+                display: inline-block !important;
+                cursor: pointer;
+            }
+
+            .icons {
+                width: auto !important;
+                margin-left: 10px;
+                gap: 15px;
+                order: 2;
+
+                img {
+                    cursor: pointer;
+
+                    &:first-child {
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+
+            .avatar {
+                order: 1;
+            }
+
+        }
+
+        .today_trends {
+
+            .col-sm-3,
+            .col-sm-7 {
+                width: 100% !important;
+            }
+        }
+
+        .ticket_tasks {
+            .col-xs-6:first-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
