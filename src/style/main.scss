@@ -22,7 +22,7 @@ body {
     background-color: $grayscale_bg !important;
     position: relative;
 
-    *{
+    * {
         transition: all 0.5s ease-in-out !important;
     }
 }
@@ -105,8 +105,8 @@ body {
 }
 
 
-.col-9 {
-    width: calResponsiveValues(1185px, 1440px) !important;
+.main {
+    // width: calResponsiveValues(1185px, 1440px) !important;
     padding-left: calResponsiveValues(30px, 1185px) !important;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -148,48 +148,50 @@ body {
             margin-left: calResponsiveValues(32px, 1185px) !important;
         }
 
-        .icons {
-            width: calResponsiveValues(88px, 1185px) !important;
-            height: 100%;
+        .heading_right {
+            gap: 32px;
 
-            // &::after{
-            //     content: '';
-            //     display: block;
-            //     width: 1px;
-            //     height: 100% !important;
-            //     position: absolute;
-            //     top: 0;
-            //     bottom: 0;
-            //     background-color: #F7F8FC;
-            // }
-            img {
-                width: 15px;
-                height: 15px;
+            .icons {
+                height: 100%;
+                gap: 0 26px;
 
-                &:first-child {
-                    margin-right: calResponsiveValues(28px, 1185px) !important;
-
+                .divider {
+                    width: 1px;
+                    background-color: $grayscal_divider;
                 }
 
-                &:last-child {
-                    position: relative;
+                img {
+                    width: 15px;
+                    height: 15px;
 
-                    &::after {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width: 6px;
-                        height: 6px;
-                        background-color: $acent_default;
-                        border-radius: 100%;
+
+                    // &:first-child {
+                    //     margin-right: calResponsiveValues(28px, 1185px) !important;
+
+                    // }
+
+                    &:last-child {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 6px;
+                            height: 6px;
+                            background-color: $acent_default;
+                            border-radius: 100%;
+                        }
                     }
+
+
                 }
-
-
             }
         }
+
+
     }
 
     .cards {
@@ -249,8 +251,8 @@ body {
         background-color: white;
         margin-bottom: 30px;
 
-        .col-sm-7 {
-            width: calResponsiveValues(780px, 1122px) !important;
+        .col-md-8 {
+            // width: calResponsiveValues(780px, 1122px) !important;
 
 
             .heading {
@@ -279,9 +281,9 @@ body {
             }
         }
 
-        .col-sm-3 {
+        .col-md-4 {
             padding: 0px;
-            width: calResponsiveValues(342px, 1122px) !important;
+            // width: calResponsiveValues(342px, 1122px) !important;
 
             .card {
 
@@ -346,7 +348,7 @@ body {
                     line-height: 24px;
                     letter-spacing: 0.4px;
                     color: $grayscal_black;
-                    margin: 0;
+                    margin: 0 !important;
                 }
 
                 a {
@@ -491,4 +493,3 @@ body {
 }
 
 @import 'responsive';
-

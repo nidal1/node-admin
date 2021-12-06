@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin media-up($type) {
+    @media (min-width: $type){
+        @content;
+    }
+}

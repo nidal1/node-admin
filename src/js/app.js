@@ -2,7 +2,8 @@
 // Sidebar
 
 document.querySelector(".menu_toggle").addEventListener("click",function () {
-    this.classList.toggle("fa-times");
+    console.log(this);
+    this.firstElementChild.classList.toggle("fa-times");
     document.querySelector(".sidebar").classList.toggle("d-none");
      
 })
@@ -10,7 +11,7 @@ document.querySelector(".menu_toggle").addEventListener("click",function () {
 document.addEventListener("scroll", function () {
     if (!document.querySelector(".sidebar").classList.contains("d-none")) {
         document.querySelector(".sidebar").classList.toggle("d-none");
-        document.querySelector(".menu_toggle").classList.toggle("fa-times");
+        document.querySelector(".menu_toggle").firstElementChild.classList.toggle("fa-times");
     }
 })
 
