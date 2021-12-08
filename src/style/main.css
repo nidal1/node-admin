@@ -68,6 +68,7 @@ body * {
   margin-bottom: 34px; }
 
 .main {
+  width: 82.29167% !important;
   padding-left: 2.53165% !important;
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -107,30 +108,29 @@ body * {
   gap: 32px; }
 
 .main .heading .heading_right .icons {
-  height: 100%;
   gap: 0 26px; }
 
 .main .heading .heading_right .icons .divider {
   width: 1px;
   background-color: #DFE0EB; }
 
-.main .heading .heading_right .icons img {
-  width: 15px;
-  height: 15px; }
-
-.main .heading .heading_right .icons img:last-child {
+.main .heading .heading_right .icons span:nth-last-child(2) {
   position: relative; }
 
-.main .heading .heading_right .icons img:last-child::after {
+.main .heading .heading_right .icons span:nth-last-child(2)::after {
   content: '';
   display: block;
   position: absolute;
-  top: 0;
+  top: 10%;
   right: 0;
   width: 6px;
   height: 6px;
   background-color: #3751ff;
   border-radius: 100%; }
+
+.main .heading .heading_right .icons span img {
+  width: 15px;
+  height: 15px; }
 
 .main .cards .card {
   background-color: white;
@@ -359,6 +359,10 @@ body * {
   background-color: #F0F1F7;
   color: #9FA2B4; }
 
+@media (max-width: 1199px) {
+  .sidebar .heading h2 {
+    font-size: 15px; } }
+
 @media (max-width: 991px) {
   .sidebar {
     width: 30% !important;
@@ -368,6 +372,8 @@ body * {
     left: 0;
     bottom: 0;
     z-index: 100; }
+  .sidebar .heading h2 {
+    font-size: 19px; }
   .main {
     width: 100% !important;
     position: absolute;

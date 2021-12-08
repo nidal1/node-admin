@@ -106,7 +106,7 @@ body {
 
 
 .main {
-    // width: calResponsiveValues(1185px, 1440px) !important;
+    width: calResponsiveValues(1185px, 1440px) !important;
     padding-left: calResponsiveValues(30px, 1185px) !important;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -152,32 +152,21 @@ body {
             gap: 32px;
 
             .icons {
-                height: 100%;
                 gap: 0 26px;
 
                 .divider {
                     width: 1px;
                     background-color: $grayscal_divider;
                 }
-
-                img {
-                    width: 15px;
-                    height: 15px;
-
-
-                    // &:first-child {
-                    //     margin-right: calResponsiveValues(28px, 1185px) !important;
-
-                    // }
-
-                    &:last-child {
+                span{
+                    &:nth-last-child(2) {
                         position: relative;
 
                         &::after {
                             content: '';
                             display: block;
                             position: absolute;
-                            top: 0;
+                            top: 10%;
                             right: 0;
                             width: 6px;
                             height: 6px;
@@ -186,8 +175,17 @@ body {
                         }
                     }
 
+                    img {
+                        width: 15px;
+                        height: 15px;
+    
+                        
 
+                    }
+                    
                 }
+
+                
             }
         }
 

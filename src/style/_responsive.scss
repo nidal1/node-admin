@@ -13,7 +13,13 @@ $xl: 1399px;
 
 
 @include media-down($lg) {
-
+    .sidebar {
+        .heading{
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @include media-down($md) {
@@ -26,6 +32,12 @@ $xl: 1399px;
         left: 0;
         bottom: 0;
         z-index: 100;
+
+        .heading{
+            h2{
+                font-size: 19px;
+            }
+        }
     }
 
     .main {
