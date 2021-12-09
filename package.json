@@ -2,7 +2,7 @@
   "name": "admin-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "*.html",
   "scripts": {
     "dev": "lite-server",
     "scss": "node-sass --watch src/style -o src/style",

@@ -1,0 +1,77 @@
+
+.sidebar {
+    background-color: $sidebar_bg;
+    padding: 0 !important;
+    width: calResponsiveValues(255px, 1440px) !important;
+    color: $sidebar_gray;
+
+    .heading {
+
+        margin-top: 37px;
+        margin-bottom: 59px;
+
+        padding-left: calResponsiveValues(32px, 255px) !important;
+
+        h2 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            margin-bottom: 0;
+            margin-left: calResponsiveValues(12px, 255px) !important;
+        }
+    }
+
+    .lists {
+
+
+        a {
+            text-decoration: none;
+            color: $sidebar_gray;
+            height: 56px;
+
+            .text {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                margin-bottom: 0;
+                text-transform: capitalize;
+            }
+
+            .icon {
+                width: calResponsiveValues(72px, 255px) !important;
+            }
+
+            &:hover {
+                color: inherit;
+            }
+
+            &.active {
+                background-color: rgba(grayscale($color: #9FA2B4), 0.08);
+                position: relative;
+
+                .text {
+                    color: $acent_light;
+                }
+
+                ::after {
+                    content: '';
+                    width: 3px;
+                    background-color: $acent_light;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .divider {
+        background-color: #40414a;
+        height: 1px !important;
+        margin-top: 16px;
+        margin-bottom: 34px;
+    }
+}

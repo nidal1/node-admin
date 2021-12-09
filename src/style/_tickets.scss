@@ -1,0 +1,73 @@
+@include main-area {
+
+
+    .table {
+        padding-top: 32px;
+        background-color: white;
+        border: 1px solid $grayscal_divider;
+        border-radius: 8px;
+
+        .table_heading {
+            padding: 0 calResponsiveValues(32px, 1122px) 48px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 24px;
+                letter-spacing: 0.4px;
+                color: $grayscal_black;
+            }
+
+            .sorting {
+                gap: 0 32px;
+
+                .sorting_icon {
+                    img {
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 8px;
+                    }
+
+                    span {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                        color: $grayscal-dark_gray;
+                    }
+                }
+            }
+        }
+
+        .table_head {
+            padding: 0 calResponsiveValues(32px, 1122px) 12px;
+            border-bottom: 1.5px solid $grayscal_divider;
+            h3{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.2px;
+                color: $grayscal_gray;
+
+                &.head-2{
+                    width: calResponsiveValues(248px, 1122px);
+                }
+
+                &.head-3{
+                    width: calResponsiveValues(180px, 1122px);
+                }
+
+                &.head-4{
+                    width: calResponsiveValues(150px, 1122px);
+                }
+
+                &:first-child{
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+
+
+}

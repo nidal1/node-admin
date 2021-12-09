@@ -1,3 +1,95 @@
+@mixin main-area {
+
+    .main {
+        width: calResponsiveValues(1185px, 1440px) !important;
+        padding-left: calResponsiveValues(30px, 1185px) !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .heading {
+            margin-bottom: 54px;
+    
+            * {
+                margin-bottom: 0;
+            }
+    
+    
+    
+            h2 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.3px;
+                color: $grayscal_black;
+                flex: 1;
+            }
+    
+            .avatar {
+                width: 44px;
+                height: 44px;
+                border-radius: 100%;
+                padding: 1px;
+                border: 1px solid $acent_light;
+                margin-left: calResponsiveValues(12px, 1185px) !important;
+            }
+    
+            h3 {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+                letter-spacing: 0.2px;
+                color: $grayscal_black;
+                margin-left: calResponsiveValues(32px, 1185px) !important;
+            }
+    
+            .heading_right {
+                gap: 32px;
+    
+                .icons {
+                    gap: 0 26px;
+    
+                    .divider {
+                        width: 1px;
+                        background-color: $grayscal_divider;
+                    }
+                    span{
+                        &:nth-last-child(2) {
+                            position: relative;
+    
+                            &::after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 10%;
+                                right: 0;
+                                width: 6px;
+                                height: 6px;
+                                background-color: $acent_default;
+                                border-radius: 100%;
+                            }
+                        }
+    
+                        img {
+                            width: 15px;
+                            height: 15px;
+        
+                            
+    
+                        }
+                        
+                    }
+    
+                    
+                }
+            }
+    
+    
+        }
+        @content;
+    }
+}
+
 @mixin media-down($type) {
     @media (max-width: $type){
         @content;
