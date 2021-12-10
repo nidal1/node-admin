@@ -7,6 +7,11 @@
         border: 1px solid $grayscal_divider;
         border-radius: 8px;
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .table_heading {
             padding: 0 calResponsiveValues(32px, 1122px) 48px;
 
@@ -39,33 +44,97 @@
             }
         }
 
+        .head-1 {
+            flex: 1;
+        }
+
+        .head-2 {
+            width: calResponsiveValues(248px, 1122px);
+        }
+
+        .head-3 {
+            width: calResponsiveValues(180px, 1122px);
+        }
+
+        .head-4 {
+            width: calResponsiveValues(150px, 1122px);
+        }
+
         .table_head {
             padding: 0 calResponsiveValues(32px, 1122px) 12px;
             border-bottom: 1.5px solid $grayscal_divider;
-            h3{
+
+            h3 {
                 font-weight: bold;
                 font-size: 14px;
                 line-height: 18px;
                 letter-spacing: 0.2px;
                 color: $grayscal_gray;
+            }
 
-                &.head-2{
-                    width: calResponsiveValues(248px, 1122px);
+        }
+
+        .table_row {
+            padding: 0 calResponsiveValues(32px, 1122px);
+            height: 92px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $grayscale_bg;
+            }
+
+            .table_cell {
+                img.guy {
+                    margin-right: 24px;
                 }
 
-                &.head-3{
-                    width: calResponsiveValues(180px, 1122px);
+                h3 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color: $grayscal_black;
+                    margin-bottom: 4px;
                 }
 
-                &.head-4{
-                    width: calResponsiveValues(150px, 1122px);
+                p {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.1px;
+                    color: $grayscal-light_gray;
+
                 }
 
-                &:first-child{
-                    flex: 1;
+                .notify {
+                    font-size: 11px;
+                    line-height: 14px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    border-radius: 100px;
+                    padding: 5px 12px;
+
+                    &.bg-red {
+                        background-color: $red_default;
+                    }
+
+                    &.bg-yellow {
+                        background-color: $yellow_default;
+                    }
+
+                    &.bg-green {
+                        background-color: $green_default;
+                    }
                 }
+
+
             }
         }
+
+
     }
 
 
