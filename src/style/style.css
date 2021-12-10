@@ -459,41 +459,44 @@ body * {
   letter-spacing: 0.2px;
   color: #4B506D; }
 
-.main .table .head-1 {
+.main .table .table_body .table_row {
+  padding: 0 2.85205%;
+  border-bottom: 1.5px solid #DFE0EB;
+  cursor: pointer; }
+
+.main .table .table_body .table_row .head-1 {
   flex: 1; }
 
-.main .table .head-2 {
+.main .table .table_body .table_row .head-2 {
   width: 22.10339%; }
 
-.main .table .head-3 {
+.main .table .table_body .table_row .head-3 {
   width: 16.04278%; }
 
-.main .table .head-4 {
+.main .table .table_body .table_row .head-4 {
   width: 13.36898%; }
 
-.main .table .table_head {
-  padding: 0 2.85205% 12px;
+.main .table .table_body .table_row.table_head {
+  padding-bottom: 12px;
   border-bottom: 1.5px solid #DFE0EB; }
 
-.main .table .table_head h3 {
+.main .table .table_body .table_row.table_head h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #9FA2B4; }
 
-.main .table .table_row {
-  padding: 0 2.85205%;
-  height: 92px;
-  cursor: pointer; }
-
-.main .table .table_row:hover {
+.main .table .table_body .table_row:hover {
   background-color: #F7F8FC; }
 
-.main .table .table_row .table_cell img.guy {
+.main .table .table_body .table_row .table_cell {
+  height: 92px; }
+
+.main .table .table_body .table_row .table_cell img.guy {
   margin-right: 24px; }
 
-.main .table .table_row .table_cell h3 {
+.main .table .table_body .table_row .table_cell h3 {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -501,13 +504,13 @@ body * {
   color: #252733;
   margin-bottom: 4px; }
 
-.main .table .table_row .table_cell p {
+.main .table .table_body .table_row .table_cell p {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1px;
   color: #C5C7CD; }
 
-.main .table .table_row .table_cell .notify {
+.main .table .table_body .table_row .table_cell .notify {
   font-size: 11px;
   line-height: 14px;
   display: flex;
@@ -519,14 +522,41 @@ body * {
   border-radius: 100px;
   padding: 5px 12px; }
 
-.main .table .table_row .table_cell .notify.bg-red {
+.main .table .table_body .table_row .table_cell .notify.bg-red {
   background-color: #F12B2C; }
 
-.main .table .table_row .table_cell .notify.bg-yellow {
+.main .table .table_body .table_row .table_cell .notify.bg-yellow {
   background-color: #FEC400; }
 
-.main .table .table_row .table_cell .notify.bg-green {
+.main .table .table_body .table_row .table_cell .notify.bg-green {
   background-color: #29CC97; }
+
+.main .table .table_pagination {
+  padding: 0 2.85205%;
+  height: 72px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #9FA2B4;
+  gap: 0 50px; }
+
+.main .table .table_pagination .row_per_page p {
+  margin-right: 8px; }
+
+.main .table .table_pagination .row_per_page span {
+  color: #4B506D; }
+
+.main .table .table_pagination .row_per_page img {
+  cursor: pointer; }
+
+.main .table .table_pagination .pagination_controls .current_page {
+  margin-right: 33px; }
+
+.main .table .table_pagination .pagination_controls img {
+  cursor: pointer; }
+
+.main .table .table_pagination .pagination_controls img:nth-last-child(2) {
+  margin-right: 12px; }
 
 @media (max-width: 1199px) {
   .sidebar .heading h2 {
@@ -630,4 +660,8 @@ body * {
   .main .today_trends .col-sm-7 {
     width: 100% !important; }
   .main .ticket_tasks .col-xs-12:first-child {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .main .table_body {
+    overflow-x: scroll; }
+  .main .table_body .table_row {
+    width: 1122px; } }

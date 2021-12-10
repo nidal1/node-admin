@@ -196,6 +196,14 @@ $xl: 1399px;
                 margin-bottom: 30px;
             }
         }
+
+        .table_body{
+            overflow-x: scroll;
+
+            .table_row{
+                width: 1122px;
+            }
+        }
     }
 }
 
