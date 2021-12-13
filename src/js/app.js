@@ -39,14 +39,11 @@ const myChart = new Chart(ctx, {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-                label: 'Nidal',
+                label: 'Today',
                 data: [22, 59, 37, 55, 50, 56],
-
-                borderColor: [
-                    'rgba(55, 81, 255, 1)',
-                ],
-                fill: true,
+                borderColor: 'rgba(55, 81, 255, 1)',
                 backgroundColor: gradientFill,
+                fill: true,
                 borderWidth: 2,
                 pointBorderColor: "rgba(55, 81, 255, 1)",
                 pointHoverBackgroundColor: "#ffffff",
@@ -57,12 +54,9 @@ const myChart = new Chart(ctx, {
 
             },
             {
-                label: 'Touhami',
+                label: 'Yesturday',
                 data: [55, 22, 50, 40, 37, 50],
-
-                borderColor: [
-                    '#DFE0EB',
-                ],
+                borderColor: '#DFE0EB',
                 borderWidth: 2,
                 pointBorderColor: "rgba(55, 81, 255, 1)",
                 pointHoverBackgroundColor: "#ffffff",
@@ -77,11 +71,10 @@ const myChart = new Chart(ctx, {
     options: {
         plugins: {
             legend: {
-                position: 'top',
-                align:'end'
+                display: false,
             },
             title: {
-                display: true,
+                display: false,
                 text: 'as of 25 May 2019, 09:41 PM',
             },
         },
@@ -89,9 +82,9 @@ const myChart = new Chart(ctx, {
             intersect: false
         },
         tension: 0.4,
-        layout: {
-            padding: 32
-        },
+        // layout: {
+        //     padding: 32
+        // },
         filler: {
             propagate: false,
         },
@@ -120,3 +113,8 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+
+document.getElementById('today').children[0].style.backgroundColor = myChart.data.datasets[0].borderColor;
+document.getElementById('yesturday').children[0].style.backgroundColor = myChart.data.datasets[1].borderColor;
+
+console.log();

@@ -176,8 +176,12 @@ body * {
   background-color: white;
   margin-bottom: 30px; }
 
-.main .today_trends .col-md-8 .heading {
+.main .today_trends .col-md-8 {
+  width: 69.51872% !important;
   padding-left: 2.85205% !important;
+  padding-right: 2.85205% !important; }
+
+.main .today_trends .col-md-8 .heading {
   padding-top: 24px;
   margin: 0; }
 
@@ -197,8 +201,37 @@ body * {
   letter-spacing: 0.1px;
   color: #9FA2B4; }
 
+.main .today_trends .col-md-8 .chart_heading {
+  margin-bottom: 54px; }
+
+.main .today_trends .col-md-8 .chart_heading h3 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #9FA2B4; }
+
+.main .today_trends .col-md-8 .chart_heading .chart_legend {
+  gap: 0 32px; }
+
+.main .today_trends .col-md-8 .chart_heading .chart_legend button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #9FA2B4;
+  gap: 0 8px; }
+
+.main .today_trends .col-md-8 .chart_heading .chart_legend button .line {
+  width: 16px;
+  height: 2px;
+  display: inline-block;
+  border-radius: 100px; }
+
+.main .today_trends .col-md-8 .chart_container {
+  padding-right: 30px; }
+
 .main .today_trends .col-md-4 {
-  padding: 0px; }
+  padding: 0px;
+  width: 30.48128% !important; }
 
 .main .today_trends .col-md-4 .card {
   border-radius: 0;

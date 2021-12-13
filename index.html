@@ -14,7 +14,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/style.css">
 
     <title>Overview</title>
 </head>
@@ -117,7 +117,8 @@
         <div class="main col-md-9 col-xs-12">
             <div class="heading d-flex align-items-center">
                 <h2 class="d-none d-lg-block">Overview</h2>
-                <div class="heading_right d-flex flex-wrap align-items-center justify-content-lg-end justify-content-start flex-grow-1 ">
+                <div
+                    class="heading_right d-flex flex-wrap align-items-center justify-content-lg-end justify-content-start flex-grow-1 ">
                     <div class="icons d-flex">
                         <span class="align-self-center">
                             <img src="src/images/search.svg" alt="">
@@ -180,7 +181,26 @@
                                     </h3>
 
                                 </div>
-                                <canvas id="myChart"></canvas>
+
+                                <div class="chart_heading d-flex align-items-center justify-content-between flex-wrap">
+                                    <h3 class="chart_title">
+                                        as of 25 May 2019, 09:41 PM
+                                    </h3>
+
+                                    <div class="chart_legend d-flex align-items-center">
+                                        <button id="today" class="d-flex align-items-center">
+                                            <span class="line"></span>
+                                            Today
+                                        </button>
+                                        <button id="yesturday" class="d-flex align-items-center">
+                                            <span class="line"></span>
+                                            Yesturday
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="chart_container">
+                                    <canvas id="myChart"></canvas>
+                                </div>
 
                             </div>
                             <div class="col-xs-12 col-md-4">

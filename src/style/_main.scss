@@ -1,5 +1,4 @@
-
-@include main-area{
+@include main-area {
     .cards {
         .card {
             background-color: white;
@@ -58,11 +57,12 @@
         margin-bottom: 30px;
 
         .col-md-8 {
-            // width: calResponsiveValues(780px, 1122px) !important;
-
+            width: calResponsiveValues(780px, 1122px) !important;
+            padding-left: calResponsiveValues(32px, 1122px) !important;
+            padding-right: calResponsiveValues(32px, 1122px) !important;
 
             .heading {
-                padding-left: calResponsiveValues(32px, 1122px) !important;
+
                 padding-top: 24px;
                 margin: 0;
 
@@ -85,11 +85,50 @@
                 }
 
             }
+
+            .chart_heading {
+                margin-bottom: 54px;
+                h3 {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.1px;
+                    color: $grayscal_gray;
+                }
+
+                .chart_legend{
+                    gap: 0 32px;
+                    
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        color: $grayscal_gray;
+                        gap: 0 8px;
+
+                        .line{
+                            width: 16px;
+                            height: 2px;
+                            display: inline-block;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+
+                
+            }
+
+            .chart_container{
+                padding-right: 30px;
+            }
+
+
+
+
         }
 
         .col-md-4 {
             padding: 0px;
-            // width: calResponsiveValues(342px, 1122px) !important;
+            width: calResponsiveValues(342px, 1122px) !important;
 
             .card {
 
